@@ -4,7 +4,7 @@ module tb();
  integer i;
  
 ///instantiation
-NOR_2_gate_level GNT(Y,A,B);
+NOR_gate_level GNT(Y,A,B);
  
 ////initialization
 
@@ -16,7 +16,7 @@ initial
 ////simulation
 initial
  begin
-  for(i=0; i<4; i=i+1)
+  for(i=0; i<4; i=i+1)  ///for loop is used to generate the differernt input combinations
    begin
     {A,B}=i;
 	#10;
